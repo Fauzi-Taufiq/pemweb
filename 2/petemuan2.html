@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../amikom.png">
+    <title>Latihan 2</title>
+</head>
+<style>
+    table, th, td {
+        border: 2px solid rgb(183, 255, 0);
+        border-collapse: collapse;
+    }
+    th, td{
+        padding-top: 10px;
+        padding-bottom: 20px;
+        padding-left: 30px;
+        padding-right: 40px;
+    }
+</style>
+<body style="background-color: rgb(135,206,235);">
+    <center><h2>A basic HTML table</h2>
+
+        <table style="width: auto;">
+            <tr>
+                <th>No.</th>
+                <th>Nama Mahasiswa</th>
+                <th>Program Studi</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Muhammad Taufiq Al Fauzi</td>
+                <td>Informatika</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Nana Syarifudin</td>
+                <td>Informatika</td>
+            </tr>
+        </table>
+        <hr>
+
+        <h2>Cell that spans two columns</h2>
+        <table>
+            <tr>
+                <th>No.</th>
+                <th>Nama Mahasiswa</th>
+                <th>Prodi</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Ahmad Ilmi</td>
+                <td rowspan="2">Teknologi Informasi</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Iftita Qurotul A.F.</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Antika Tri A. L.</td>
+                <td>Akuntansi</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Nur Wahyudi</td>
+                <td>Rekayasa Otomotif</td>
+            </tr>
+        </table>
+        </center>
+        
+        <hr>
+        <h2>Daftar UKM di Universitas Amikom Yogyakarta</h2>
+        <ul>
+          <li>Bulutangkis</li>
+          <li>Futsal</li>
+          <li>Paduan Suara</li>
+        </ul>  
+        
+        <h2>Daftar Mata Kuliah Prodi S1 Informatika</h2>
+        <ol>
+            <li>Pemrograman Web</li>
+            <li>Pemrograman Lanjut</li>
+            <li>Struktur Data</li>
+            <li>Bahasa Indonesia</li>
+        </ol>
+        
+        <h3>Menu Kantin "Makan Enak"</h3>
+        <dl>
+            <dt>Coffee</dt>
+            <dd>- black hot drink</dd>
+            <dt>Milk</dt>
+            <dd>- white cold drink</dd>
+        </dl>
+        
+        <hr>
+        <h3>Latihan Membuat Form</h3>
+        
+        <fieldset>
+        <legend>Your Identity</legend>
+            <form action="" method="">
+            First name:
+            <input type="text" name="firstname"/>
+            <br>
+            Last name:
+            <input type="text" name="lastname" required/>
+            <br>
+            Password :
+            <input type="password" name="password" />
+            <br>
+            Contoh Form Disable :
+            <input type="text" name="password" disabled/>
+            <br>
+            Contoh Form Readonly :
+            <input type="text" name="password" readonly value="tidak bisa diedit"/>
+            <br>
+            Birth date:
+            <input type="date" name="birthday" />
+            <br>
+            Hoby:
+            <input type="checkbox" name="hoby" value="melukis"/> Drawing
+            <input type="checkbox" name="hoby" value="berenang"/> Swimming
+            <input type="checkbox" name="hoby" value="menyanyi"/> Singing
+            <input type="checkbox" name="hoby" value="bersepeda"/> Cycling
+            <input type="checkbox" name="hoby" value="berbelanja"/> Shopping
+            <input type="checkbox" name="hoby" value="gaming"/> Gaming
+            <br>
+            Gender :
+            <input type="radio" checked="checked" name="Sex" value="male">Male
+            <input type="radio" name="Sex" value="female">Female
+            <br>
+            Department :
+            <select name="department">
+                <option>-- Select Your Department --</option>
+                <option value="informatics">Informatics</option>
+                <option value="accounting">Accounting</option>
+                <option value="economy">Economy</option>
+                <option value="civil">Civil</option>
+                <option value="architecture">Architecture</option>
+            </select>
+            <br>
+            Your Commmets :
+            <textarea rows="10" cols="30"> I am new college student </textarea>
+            <br>
+            Upload foto:
+            <input type="file" name="foto" />
+            <p>
+            <input type="submit" name="simpan" value="simpan">
+            <input type="reset" value="reset">
+            </form>
+        </fieldset>
+        <hr>
+        <h1><font color="blue">Membuat iframe pada HTML</font></h1>
+        <p>
+            <article>
+                <h3>Kontak Univeritas Amikom Yogyakarta</h3>
+                Alamat : Jl. Padjajaran, Ring Road Utara, Kel. Condongcatur,
+                Kec. Depok, Kab. Sleman, Prop. Daerah Istimewa Yogyakarta 55283<p>
+                <center>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.2818903271286!2d110.40647117376524!3d-7.759899576953855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a599bd3bdc4ef%3A0x6f1714b0c4544586!2sUniversity%20of%20Amikom%20Yogyakarta!5e0!3m2!1sen!2sid!4v1709168112792!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </center>
+            </article>
+        </p>
+    </body>
+</html>
